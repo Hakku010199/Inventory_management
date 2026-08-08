@@ -41,5 +41,5 @@ const addInventory = (req, res) => {
             )
 }
 
-    module.exports = {     addInventor  }
+    module.exports = {     addInventory  }
     
