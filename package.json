@@ -1,0 +1,21 @@
+{
+  "name": "inventory-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+     "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.23.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
