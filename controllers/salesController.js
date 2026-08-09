@@ -9,11 +9,7 @@
             } = req.body;
 
             
-         if (!business_id || !product_id || !quantity) {
-                return res.status(400).json({
-                    message: "business_id, product_id and quantity are required"
-                });
-            }
+       
 
             if (quantity <= 0) {
                 return res.status(400).json({
@@ -157,18 +153,19 @@
                             return rollback(err)
                         }
 
-                        const saleId = saleResult.insertId;
+                     const saleId = saleResult.insertId
 
                         // batch deduction
-                        processDeduction(
-                            deductions,
+                     processDeduction
+                     (
+                        deductions,
                             saleId,
                             0
                         );
                     }
                 );
-            });
-        });
+              });
+        })
 
 
 
@@ -189,7 +186,7 @@
                     }
 
                     return res.status(201).json({
-                        message: "Sale created successfully",
+                        message: "Sale created ",
                         sale_id: saleId,
                         deductions: deductions
                     })

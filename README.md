@@ -36,9 +36,9 @@ sale_items - stores batches consumed in each sale
 
 Relationships:
 
-business → sales → sale_items → inventory_batches → products
 
-Run the SQL schema to create the required database and tables:
+
+Run the SQL schema 
 
 --bash
 sudo mysql < database/schema.sql

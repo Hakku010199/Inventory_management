@@ -10,11 +10,11 @@ const addInventory = (req, res) => {
          cost_price
     } = req.body;
 
-    const sql = `
-        INSERT INTO inventory_batches
-        (product_id, batch_no, quantity, purchase_date, expiry_date, cost_price)
-        VALUES (?, ?, ?, ?, ?, ?)
-    `;
+     const sql = `
+                INSERT INTO inventory_batches
+                (product_id, batch_no, quantity, purchase_date, expiry_date, cost_price)
+                VALUES (?, ?, ?, ?, ?, ?)
+            `;
 
  db.query( sql,
         [

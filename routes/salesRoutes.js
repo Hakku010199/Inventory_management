@@ -6,7 +6,7 @@ const { createSale } = require("../controllers/salesController");
  router.post("/", createSale);
 
 
-//  router.post("/sales", createSale);
+// router.post("/sales", createSale);
 
 
 
